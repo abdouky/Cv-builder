@@ -1,0 +1,600 @@
+.preview-wrapper {
+  width: 100%;
+  max-width: 794px;
+  background: white;
+}
+
+.a4-preview {
+  width: 794px;
+  min-height: 1123px;
+  background: white;
+  font-size: 12px;
+  line-height: 1.5;
+  overflow: hidden;
+  position: relative;
+}
+
+.a4-preview[dir="rtl"] {
+  font-family: 'Amiri', 'Arial', sans-serif;
+}
+
+/* Scale preview to fit container */
+.preview-scaler {
+  transform-origin: top left;
+  display: block;
+}
+
+.preview-controls {
+  width: 100%;
+  max-width: 794px;
+  margin-bottom: 12px;
+}
+
+/* Classic Template */
+.tpl-classic {
+  padding: 40px 50px;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #1e293b;
+}
+
+.tpl-classic .cv-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #2563eb;
+}
+
+.tpl-classic .cv-header .name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.tpl-classic .cv-header .job-title {
+  font-size: 14px;
+  color: #2563eb;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.tpl-classic .cv-header .city {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.tpl-classic .cv-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px;
+  display: block;
+  border: 3px solid #2563eb;
+}
+
+.tpl-classic .contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 11px;
+  color: #475569;
+}
+
+.tpl-classic .contact-bar a {
+  color: #475569;
+  text-decoration: none;
+}
+
+.tpl-classic .section {
+  margin-bottom: 20px;
+}
+
+.tpl-classic .section-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #2563eb;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tpl-classic .exp-item {
+  margin-bottom: 14px;
+}
+
+.tpl-classic .exp-item .exp-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.tpl-classic .exp-item .title {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tpl-classic .exp-item .company {
+  color: #2563eb;
+  font-size: 11px;
+}
+
+.tpl-classic .exp-item .dates {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.tpl-classic .exp-item .desc {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #475569;
+  white-space: pre-line;
+}
+
+.tpl-classic .edu-item {
+  margin-bottom: 10px;
+}
+
+.tpl-classic .edu-item .edu-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tpl-classic .edu-item .degree {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tpl-classic .edu-item .institution {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.tpl-classic .edu-item .duration {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.tpl-classic .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tpl-classic .skill-tag {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  border: 1px solid #bfdbfe;
+}
+
+/* Sidebar Template */
+.tpl-sidebar {
+  display: flex;
+  min-height: 1123px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.tpl-sidebar[dir="rtl"] {
+  flex-direction: row-reverse;
+}
+
+.tpl-sidebar .sidebar {
+  width: 240px;
+  min-width: 240px;
+  background: #1e3a5f;
+  color: white;
+  padding: 32px 20px;
+}
+
+.tpl-sidebar .main {
+  flex: 1;
+  padding: 32px 28px;
+  color: #1e293b;
+}
+
+.tpl-sidebar .sidebar .profile-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.4);
+  margin: 0 auto 16px;
+  display: block;
+}
+
+.tpl-sidebar .sidebar .photo-placeholder {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto 16px;
+}
+
+.tpl-sidebar .sidebar .s-name {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.tpl-sidebar .sidebar .s-title {
+  font-size: 11px;
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.tpl-sidebar .sidebar .s-city {
+  font-size: 10px;
+  text-align: center;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.tpl-sidebar .sidebar .s-section-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 8px;
+  margin-top: 16px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.tpl-sidebar .sidebar .contact-item {
+  font-size: 10px;
+  margin-bottom: 6px;
+  word-break: break-all;
+  opacity: 0.9;
+}
+
+.tpl-sidebar .sidebar .contact-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.tpl-sidebar .sidebar .skill-item {
+  font-size: 11px;
+  margin-bottom: 6px;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  opacity: 0.9;
+}
+
+.tpl-sidebar .sidebar .lang-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  margin-bottom: 6px;
+  opacity: 0.9;
+}
+
+.tpl-sidebar .main .m-section {
+  margin-bottom: 20px;
+}
+
+.tpl-sidebar .main .m-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e3a5f;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #1e3a5f;
+}
+
+.tpl-sidebar .main .exp-item {
+  margin-bottom: 14px;
+}
+
+.tpl-sidebar .main .exp-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.tpl-sidebar .main .exp-title {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tpl-sidebar .main .exp-dates {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.tpl-sidebar .main .exp-company {
+  font-size: 11px;
+  color: #1e3a5f;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.tpl-sidebar .main .exp-desc {
+  font-size: 11px;
+  color: #475569;
+  white-space: pre-line;
+}
+
+.tpl-sidebar .main .edu-item {
+  margin-bottom: 10px;
+}
+
+.tpl-sidebar .main .edu-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tpl-sidebar .main .edu-degree {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tpl-sidebar .main .edu-duration {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.tpl-sidebar .main .edu-institution {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.tpl-sidebar .main .summary-text {
+  font-size: 11px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* Modern Template */
+.tpl-modern {
+  font-family: 'Inter', Arial, sans-serif;
+  color: #1e293b;
+}
+
+.tpl-modern .m-header {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: white;
+  padding: 36px 48px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.tpl-modern .m-header .header-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.5);
+  flex-shrink: 0;
+}
+
+.tpl-modern .m-header .header-placeholder {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.tpl-modern .m-header .header-info .h-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.tpl-modern .m-header .header-info .h-title {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+
+.tpl-modern .m-header .header-info .h-city {
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+.tpl-modern .m-contact-bar {
+  background: #f8fafc;
+  padding: 10px 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 11px;
+  color: #475569;
+}
+
+.tpl-modern .m-contact-bar a {
+  color: #475569;
+  text-decoration: none;
+}
+
+.tpl-modern .m-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 24px 48px;
+}
+
+.tpl-modern .m-body .left-col {
+  padding-right: 24px;
+  border-right: 1px solid #e2e8f0;
+}
+
+.tpl-modern .m-body .right-col {
+  padding-left: 24px;
+}
+
+.tpl-modern[dir="rtl"] .m-body .left-col {
+  padding-right: 0;
+  padding-left: 24px;
+  border-right: none;
+  border-left: 1px solid #e2e8f0;
+}
+
+.tpl-modern[dir="rtl"] .m-body .right-col {
+  padding-left: 0;
+  padding-right: 24px;
+}
+
+.tpl-modern .m-section {
+  margin-bottom: 20px;
+}
+
+.tpl-modern .m-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #2563eb;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #2563eb;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tpl-modern .m-exp-item {
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.tpl-modern .m-exp-item:last-child {
+  border-bottom: none;
+}
+
+.tpl-modern .m-exp-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.tpl-modern .m-exp-title {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tpl-modern .m-exp-dates {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.tpl-modern .m-exp-company {
+  font-size: 11px;
+  color: #2563eb;
+  margin-bottom: 4px;
+}
+
+.tpl-modern .m-exp-desc {
+  font-size: 11px;
+  color: #64748b;
+  white-space: pre-line;
+}
+
+.tpl-modern .m-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tpl-modern .m-skill-tag {
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.tpl-modern .m-edu-item {
+  margin-bottom: 10px;
+}
+
+.tpl-modern .m-edu-degree {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tpl-modern .m-edu-institution {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.tpl-modern .m-edu-duration {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.tpl-modern .m-lang-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.tpl-modern .m-lang-level {
+  color: #64748b;
+}
+
+.tpl-modern .m-summary-text {
+  font-size: 11px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.tpl-modern .m-cert-item {
+  margin-bottom: 8px;
+}
+
+.tpl-modern .m-cert-name {
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.tpl-modern .m-cert-issuer {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.tpl-modern .m-proj-item {
+  margin-bottom: 10px;
+}
+
+.tpl-modern .m-proj-name {
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.tpl-modern .m-proj-desc {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.tpl-modern .m-proj-url a {
+  font-size: 10px;
+  color: #2563eb;
+  text-decoration: none;
+}
